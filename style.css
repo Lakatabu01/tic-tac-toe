@@ -1,0 +1,40 @@
+*, :root, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 2px solid black;
+    height: 20em;
+    width: 20em;
+}
+.board div{
+    border: 1px solid black;
+    background-color: aqua;
+}
+.user-info{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.user-info div{
+    padding: 5px;
+    margin: 10px;
+}
+button{
+    margin-top: 10px;
+}
+.text-display{
+    visibility: hidden;
+    margin: 10px;
+    font-size: 20px;
+}

@@ -8,18 +8,21 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: yellow;
+    font-family: 'Courier New', Courier, monospace;
 }
 .board{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    border: 2px solid black;
     height: 20em;
     width: 20em;
+    display: none;
 }
 .board div{
     border: 1px solid black;
-    background-color: aqua;
+    background-color: white;
+    
 }
 .user-info{
     margin: 30px;
@@ -32,9 +35,24 @@ body{
 }
 button{
     margin-top: 10px;
+    height: 5em;
+    width: 10em;
+    background-color: lightgreen;
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px black ;
 }
-.text-display{
-    visibility: hidden;
+.text-display, .announcer{
+    
     margin: 10px;
     font-size: 20px;
+}
+.unit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.announcer{
+    color: green;
+    font-size: 2.5em;
+    margin: 10px;
 }

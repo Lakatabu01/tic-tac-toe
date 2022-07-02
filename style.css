@@ -19,10 +19,26 @@ body{
     width: 20em;
     display: none;
 }
-.board div{
-    border: 1px solid black;
-    background-color: white;
-    
+.board div:nth-child(1), .board div:nth-child(4){
+border-right: 6px solid black;
+border-bottom: 6px solid black;
+}
+.board div:nth-child(3), .board div:nth-child(6){
+    border-left: 6px solid black;
+    border-bottom: 6px solid black;
+}
+.board div:nth-child(2), .board div:nth-child(5){
+    border-bottom: 6px solid black;
+}
+.board div:nth-child(3), .board div:nth-child(6){
+    border-left: 6px solid black;
+    border-bottom: 6px solid black;
+}
+.board div:nth-child(7){
+    border-right: 6px solid black;
+}
+.board div:nth-child(9){
+    border-left: 6px solid black;
 }
 .user-info{
     margin: 30px;
@@ -34,7 +50,7 @@ body{
     margin: 10px;
 }
 button{
-    margin-top: 10px;
+    margin: 10px;
     height: 5em;
     width: 10em;
     background-color: lightgreen;

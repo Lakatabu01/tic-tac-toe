@@ -55,7 +55,14 @@ button{
     width: 10em;
     background-color: lightgreen;
     border-radius: 1em;
-    box-shadow: 2px 2px 2px black ;
+    box-shadow: 3px 5px 2px black ;
+}
+button:hover{
+    background-color: yellow;
+}
+button:active{
+    height: 5.5em;
+    width: 11em;
 }
 .text-display, .announcer{
     
